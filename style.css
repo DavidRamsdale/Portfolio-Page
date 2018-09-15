@@ -13,12 +13,43 @@
       padding: 0;
       overflow: hidden;
       background-color: #333;
+    
   }
   .toolbar ul li{
-        float: right;
+        float: left;
+        border-right: 1px solid #bbb;
         display: inline;
-        display: block;
         color: white;
         text-align: center;
         padding: 14px 16px;
+  }
+  
+  #about{
+    background-color: #EFE9F4;
+    text-align: center;
+    padding: 200px;
+  }
+  #portfolio{
+    background-color: #8EE3F5;
+    text-align: center;
+    padding: 200px;
+  
+  }
+  #blog{
+    background-color: #EFE9F4;
+    text-align: center;
+    padding: 200px;
+  
+  }
+  #contact{
+    background-color: grey;
+    text-align: center;
+    padding: 200px;
+  }
+  
+  footer{
+    background-color: #171D1C;
+    color: white;
+    text-align: center;
+    padding: 30px;
   }
