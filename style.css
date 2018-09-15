@@ -1,0 +1,24 @@
+.title{
+    color: blue;
+    min-height: 100vh;
+    background-color: lightblue;
+    margin: auto;
+    border: 0px;
+    text-align: center;
+  }
+  
+  .toolbar ul {
+      list-style-type: circle;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+  }
+  .toolbar ul li{
+        float: right;
+        display: inline;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+  }
