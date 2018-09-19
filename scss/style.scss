@@ -30,36 +30,98 @@
   position: fixed;
   top: 0;
   width: 100%;
+  
+}
+
+.containers{
+  display:flex;
+  flex-direction: column;
+  padding: auto;
+  // align-items: center;
+  // justify-content: center;
+  
 }
 
 #about{
-  background-color: white;
+  background-color: grey;
   text-align: center;
-  padding: 100px;
-  
-}
+  padding: 0px;
+  @media screen and (min-width: 600px) {
+    
+    padding: 20px;
 
-.facebox{
+  }
+  @media screen and (min-width: 992px) {
+    padding:100px;
   
-  background-color: purple;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  }
 
+
+  .about_header-section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:green;
+  }
+  
+  .about_info_section{
+    display: flex;
+    background-color: purple;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+    .Section_piece{
+      flex-direction: column;
+      @media screen and (min-width: 600px) {
+    
+        flex: 50%;
+    
+      }
+      @media screen and (min-width: 992px) {
+        flex: 25%;
+        padding:25px;
+      
+      }
+      
+    }
+
+  }
+}
 #projects{
   background-color: #EFE9F4;;
   text-align: center;
-  padding: 100px;
-} 
-.project-flexbox{
-  display: flex;
-  justify-content: space-around;
+  // padding: 100px;
+}
+
+#project-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-items{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(1, 300px);
+  grid-template-rows: repeat(2, 200px);
+    @media screen and (min-width: 992px) {
+      grid-template-columns: repeat(2, 300px);
+      }
+
+
+    .item{
+      img{
+      width: 100%;
+      height: 100%;
+      }
+    }
   
 }
 
 
-#blog{
+
+#Education{
   background-color: white;
   text-align: center;
   padding: 200px;
@@ -87,11 +149,6 @@ footer{
 
 footer ul li{
   display: inline
-}
-
-.containers{
-  
-  
 }
 
 .header-section{
@@ -130,4 +187,4 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-}
+  }

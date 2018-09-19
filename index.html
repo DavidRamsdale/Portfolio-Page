@@ -5,123 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Davids Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="main.js"></script>
 </head>
 <body>
-
-    <div>
-        <!--HOME PAGE  -->
-          <div class = "title"> 
-              <h1> Hello, my name is <strong>David Ramsdale</strong> and I'm a full stack developer.</h1> 
-          </div>
-        
-            <div class="toolbar">
-              <ul>
-                <li><a href="Home">Home</a></li>
-                <li><a href="About">About</a></li>
-                <li><a href="Projects">Projects</a></li>
-                <li><a href="Blog">Blog</a></li>
-                <li><a href="Contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        
-        <!--ABOUT ME  -->
-        
-          <section id ="about">
-            <div class = "containers">
-              <div class= "header-section">
-                <h2>About me</h2>
-              </div>
-              
-              <div class ="facebox">
-                <div class= "profilepic">
-                  <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2011/01/4-ways-cheer-up-depressed-cat.jpg" alt="Profilepic">
-                </div>
-                <div class= "aboutinfo">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                </div>        
-              </div>
-             </div>
-            
-          </section>
-        
-        <!-- PROJECTS -->
-          <section id= "projects">
-            <div class = "containers">
-              <div class= "header-section">
-                <h2>Projects</h2>
-              </div>
-              
-              <div class= "project-flexbox">
-                  <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2011/01/4-ways-cheer-up-depressed-cat.jpg" alt="Profilepic" height="200" width="200">
-                  <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2011/01/4-ways-cheer-up-depressed-cat.jpg" alt="Profilepic" height="200" width="200">
-                  <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2011/01/4-ways-cheer-up-depressed-cat.jpg" alt="Profilepic" height="200" width="200">
-                
-              </div>
-              
-             </div>
-          </section>
-        <!--  BLOG-->
-          <section id= "blog">
-             <div class = "containers">
-              <div class= "header-section">
-                <h2>Blogs</h2>
-              </div>
-              
-              <div class= "blog-flexbox">
-                  <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2011/01/4-ways-cheer-up-depressed-cat.jpg" alt="Profilepic" height="200" width="200">
-                  <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2011/01/4-ways-cheer-up-depressed-cat.jpg" alt="Profilepic" height="200" width="200">
-                  <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2011/01/4-ways-cheer-up-depressed-cat.jpg" alt="Profilepic" height="200" width="200">
-                
-              </div>
-              
-             </div>
-          </section>
-        <!-- CONTACT  -->
-          <section id= "contact">
-            <div class = "containers">
-              <h2>Contact</h2>
-            </div>
-              
-           <div>
-          <div class="container">
-          <form action="action_page.php">
-        
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-        
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        
-            <input type="submit" value="Submit">
-        
-          </form>
+  <div>
+    <!--HOME PAGE  -->
+      <div class = "title"> 
+          <h1> Hello, my name is <strong>David Ramsdale</strong> and I'm a full stack developer.</h1> 
+      </div>
+    
+        <div class="toolbar" id ="mytoolbar">
+          <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Projects">Projects</a></li>
+            <li><a href="Education">Education</a></li>
+            <li><a href="Work Experience">Work Experience</a></li>
+            <li><a href="Contact">Contact</a></li>
+          </ul>
         </div>
-            </div>
-          </section>
+      </div>
+    
+    <!--ABOUT ME  -->
+    
+      <section id ="about">
+        <div class = "containers">
+          <div class= "about_header-section">
+            <h2>About me</h2>
+            <p> Random text Random text Random text Random text Random textRandom textRandom text Random textRandom textRandom text</p>
+          </div>
           
-          <footer>
-            <ul>
-              <li><a href="">Facebook</a></li>
-              <li><a href="">linked in</a></li>
-              <li><a href="">Github</a></li>
-            </ul>
-            <p>David Ramsdale 2018</p>
-          </footer>
+          <div class ="about_info_section">
+            <div class= "Section_piece">
+              <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2011/01/4-ways-cheer-up-depressed-cat.jpg" width="300px" height= "300px" alt="Profilepic">
+            </div>
+            
+            <div class ="Section_piece">
+              <h2>Programming skills jhkjhjkhkhjjkhj</h2>
+              <p>Hello my name is david adka sdkk jk kj jk kj kjkj kj kjkjjk kj</p>
+            </div>
+          </div>
+         </div>
         
+      </section>
+    
+    <!-- PROJECTS -->
+      <section id= "projects">
+        <div class = "containers" id = "project-container">
+          <div class= "header-section">
+            <h2>Projects</h2>
+          </div>
+          
+          <div class="project-items">
+            <div class= "item"><img src="https://placedog.net/500 
+          " alt=""></div>
+            <div class= "item"><img src="https://placedog.net/504 
+          " alt=""></div>
+              <div class= "item"><img src="https://placedog.net/502 
+          " alt=""></div>
+              <div class= "item"><img src="https://placedog.net/503 
+          " alt=""></div>
+            
+          </div>
+          
+         </div>
+      </section>
+    
+    <!--  EDUCATION-->
+      <section id= "Education">
+         <div class = "containers">
+          <div class= "header-section">
+            <h2>Education</h2>
+          </div>
+          
+          <div class= "blog-flexbox">
+              <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2011/01/4-ways-cheer-up-depressed-cat.jpg" alt="Profilepic" height="200" width="200">
+           </div>
+          </div>
+      </section>
+    
+    <!--Work Experience -->
+    
+    <!-- CONTACT  -->
+      <section id= "contact">
+        <div class = "containers">
+          <h2>Contact</h2>
         </div>
+          
+       <div>
+      <div class="container">
+      <form action="action_page.php">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+        </div>
+      </section>
+      
+      <footer>
+        <ul>
+          <li><a href="#">Gmail</a></li>
+          <li><a href="#">linked in</a></li>
+          <li><a href="#">Github</a></li>
+        </ul>
+        <p>David Ramsdale 2018</p>
+      </footer>
+    
+    </div>
+    
 </body>
 </html>
