@@ -79,6 +79,42 @@
   }
 }
 
+#Skills {
+  background-color: purple;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: space-around;
+  height: 900px;
+}
+#Skills .Skills-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 800px;
+}
+#Skills .Skills-items p {
+  font-size: 3em;
+  margin: 0;
+}
+#Skills .Skills-items .skills-each {
+  width: 80%;
+  box-shadow: 3px 3px;
+  background-color: white;
+  text-align: start;
+  padding: 20px;
+}
+@media screen and (min-width: 600px) {
+  #Skills .Skills-items .skills-each {
+    width: 500px;
+  }
+}
+#Skills .Skills-items .skills-each .table-header h2 {
+  border-bottom: 2px solid grey;
+}
+
 #projects {
   background-color: #EFE9F4;
   text-align: center;
@@ -114,7 +150,7 @@
 #Education {
   background-color: green;
   text-align: center;
-  height: 300px;
+  height: 200px;
 }
 @media screen and (min-width: 600px) {
   #Education {
@@ -154,12 +190,12 @@
 }
 #Work-Experience .Work-experience-items .jobs {
   width: 80%;
+  box-shadow: 3px 3px;
+  background-color: grey;
 }
 @media screen and (min-width: 600px) {
   #Work-Experience .Work-experience-items .jobs {
     width: 500px;
-    box-shadow: 3px 3px;
-    background-color: grey;
   }
 }
 
@@ -177,47 +213,8 @@ footer {
 
 footer ul li {
   display: inline;
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%;
-  /* Full width */
-  padding: 12px;
-  /* Some padding */
-  border: 1px solid #ccc;
-  /* Gray border */
-  border-radius: 4px;
-  /* Rounded borders */
-  box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  margin-top: 6px;
-  /* Add a top margin */
-  margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical;
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+  font-size: 3em;
+  word-spacing: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
