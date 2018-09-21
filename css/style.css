@@ -95,10 +95,6 @@
   justify-content: space-around;
   height: 800px;
 }
-#Skills .Skills-items p {
-  font-size: 3em;
-  margin: 0;
-}
 #Skills .Skills-items .skills-each {
   width: 80%;
   box-shadow: 3px 3px;
@@ -114,12 +110,16 @@
 #Skills .Skills-items .skills-each .table-header h2 {
   border-bottom: 2px solid grey;
 }
+#Skills .Skills-items .skills-each p {
+  font-size: 3em;
+  margin: 0;
+}
 
 #projects {
   background-color: #EFE9F4;
   text-align: center;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 600px) {
   #projects {
     padding: 100px;
   }
@@ -137,9 +137,16 @@
   grid-template-columns: repeat(1, 300px);
   grid-template-rows: repeat(2, 200px);
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 640px) {
   .project-items {
     grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 200px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .project-items {
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 250px);
   }
 }
 .project-items .item img {
@@ -205,16 +212,20 @@
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   background-color: #171D1C;
-  color: white;
-  text-align: center;
-  padding: 30px;
+  padding: 100px;
+  height: 200px;
 }
-
-footer ul li {
-  display: inline;
-  font-size: 3em;
-  word-spacing: 30px;
+footer .footer-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 48px;
+  width: 200px;
+  height: 200px;
+  background-color: green;
 }
 
 /*# sourceMappingURL=style.css.map */
