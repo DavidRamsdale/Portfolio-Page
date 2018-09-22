@@ -1,47 +1,82 @@
-.title{
-  color: white;
-  min-height: 100vh;
-  background-color: lightblue;
-  margin: auto;
-  border: 0px;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue",sans-serif;
+  font-weight: lighter;
+}
+
+// TOOLBAR //
+
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: lightblue;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  color:white;
 }
 
-.toolbar{
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 0px;
+
   ul {
-    list-style-type: circle;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #171D1C; 
-      li{
-      float: left;
-      border-right: 1px solid #bbb;
-      display: inline;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-    }
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+      
+      li {
+          display: inline-block;
+          padding: 16px 40px;
+      }
+
+      a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 16px;
+      }
   }
 }
-.sticky {
-  position: fixed;
-  top: 0;
+
+nav.black ul {
+  background: #000;
+}
+
+
+.menu-icon {
+  line-height: 60px;
   width: 100%;
-  
+  background: #000;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
 }
 
 .containers{
   display:flex;
   flex-direction: column;
   padding: auto;
-  // align-items: center;
-  // justify-content: center;
   
 }
 
+// ABOUT SECTION
 #about{
   background-color: grey;
   text-align: center;
@@ -89,6 +124,8 @@
   }
 }
 
+// SKILLS SECTION
+
 #Skills{
   background-color:purple;
   text-align: center;
@@ -128,6 +165,8 @@
   }
 
 }
+
+// PROJECTS SECTION
 
 #projects{
   background-color: #EFE9F4;;
@@ -170,12 +209,12 @@
   
 }
 
-
+// EDUCATION SECTION
 
 #Education{
   background-color: green;
   text-align: center;
-  height: 200px;
+  height: 250px;
   // padding: 200px; * remember to add media query to add padding.
     @media screen and (min-width: 600px) {
       padding: 50px;
@@ -206,6 +245,8 @@
   // }
   }
 }
+
+// WORK EXPERIENCE SECTION
 
 #Work-Experience{
   background-color:purple;
@@ -248,71 +289,57 @@ footer{
   display: flex;
   justify-content: center;
   background-color: #171D1C;
-  padding: 100px;
-  height:200px;
  
 
   .footer-items{
     display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    margin-left: 48px;
-    width: 200px;
-    height:200px;
+    justify-content:space-evenly;
+    // margin-left: 48px;
+    width: 300px;
     background-color: green;
-    
-    
-    
 
-
+    .icon{
+      font-size: 3em;
+    }
   }
   
-
 }
 
-// footer ul li{
-//   display: inline;
-//   font-size: 3em;
-//   word-spacing: 30px;
+
+// MEDIA QUERY
 
 
-// }
+@media(max-width: 786px) {
 
-.header-section{
- 
+  .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+  }
+
+  nav ul {
+        max-height: 0px;
+        background: #000;
+  }
+
+  nav.black ul {
+        background: #000;
+  }
+
+  .showing {
+        max-height: 34em;
+  }
+
+  nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+  }
+
+  .menu-icon {
+        display: block;
+  }
+
 }
-
-// /* Style inputs with type="text", select elements and textareas */
-// input[type=text], select, textarea {
-//     width: 100%; /* Full width */
-//     padding: 12px; /* Some padding */  
-//     border: 1px solid #ccc; /* Gray border */
-//     border-radius: 4px; /* Rounded borders */
-//     box-sizing: border-box; /* Make sure that padding and width stays in place */
-//     margin-top: 6px; /* Add a top margin */
-//     margin-bottom: 16px; /* Bottom margin */
-//     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-// }
-
-// /* Style the submit button with a specific background color etc */
-// input[type=submit] {
-//     background-color: #4CAF50;
-//     color: white;
-//     padding: 12px 20px;
-//     border: none;
-//     border-radius: 4px;
-//     cursor: pointer;
-// }
-
-// /* When moving the mouse over the submit button, add a darker green color */
-// input[type=submit]:hover {
-//     background-color: #45a049;
-// }
-
-// /* Add a background color and some padding around the form */
-// .container {
-//     border-radius: 5px;
-//     background-color: #f2f2f2;
-//     padding: 20px;
-//   }
 

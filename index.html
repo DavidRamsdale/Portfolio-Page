@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
 
 
@@ -11,26 +12,37 @@
     <title>Davids Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <script src="main.js"></script>
-</head>
-<body>
-  <div>
-    <!--HOME PAGE  -->
-      <div class = "title"> 
-          <h1> Hello, my name is <strong>David Ramsdale</strong> and I'm a full stack developer.</h1> 
-      </div>
+
+
     
-        <div class="toolbar" id ="mytoolbar">
-          <ul>
-            <li><a href="Home">Home</a></li>
-            <li><a href="About">About</a></li>
-            <li><a href="Projects">Projects</a></li>
-            <li><a href="Education">Education</a></li>
-            <li><a href="Work Experience">Work Experience</a></li>
-            <li><a href="Contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+</head>
+
+<body>
+  <!--HOME PAGE  -->
+  <nav>
+    <div class="menu-icon">
+      <i class="fa fa-bars fa-2x"></i>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Work-Experience">Work Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+            
+    <div class = "title"> 
+      <h1> Hello, my name is <strong>David Ramsdale</strong> and I'm a full stack developer.</h1> 
+    </div>
+  </header>
+  
     
     <!--ABOUT ME  -->
     
@@ -199,17 +211,45 @@
           
        
       
-        <footer class="footer-items">
+        <footer>
           <div class="footer-items">
-            <div><a href="#"><i class="fas fa-envelope-square"></i></a></div>
-            <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
-            <div><a href="#"><i class="fab fa-github-square"></i></div>
+            <div class="icon"><a href="https://medium.com/@davidramsdale1991" target=_blank><i class="fab fa-medium"></i></div>
+            <div class="icon"><a href="#" target=_blank><i class="fas fa-envelope-square"></i></a></div>
+            <div class="icon"><a href="https://www.linkedin.com/in/david-ramsdale-976031125/" target=_blank><i class="fab fa-linkedin"></i></a></div>
+            <div class="icon"><a href="https://github.com/DavidRamsdale" target=_blank><i class="fab fa-github-square"></i></div>
           </div>
             
           
         </footer>
      </section>
+
+     <script type="text/javascript">
+
+      // Menu-toggle button
+  
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+  
+      // Scrolling Effect
+  
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+  
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+  
+  
+      </script>
     
     
 </body>
-</html>
+
+
+ 
