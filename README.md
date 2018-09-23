@@ -30,7 +30,9 @@ There was a lot of features that I did want to add into the webpage but unfortun
  •	1983 the first successful test of the automated distrusted Domain name system (DNS) was run. This is a key part to the development of the internet as it was the foundation for popularization and expansion of the internet.
  
  •	1991 CERN introduces the world wide web to the world with HTML.
+ 
  • 1992 HTTP was released to improve efficiency of document transfer.
+ 
  • 1993 the mosaic graphical browser was released which accelerated the use of the Internet, due to its user friendly interface allowing users to point and click and to use hyperlinks.
 
 ### Define and describes the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers 
