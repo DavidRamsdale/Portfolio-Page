@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+  background: #C8C2AE;
 }
 
 body {
@@ -9,13 +10,34 @@ body {
   font-weight: lighter;
 }
 
-// TOOLBAR //
+h2{
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: bold;
 
+  @media screen and (min-width: 600px) {
+    font-size: 30px;
+
+  }
+
+  @media screen and (min-width: 990px) {
+    
+    font-size: 35px;
+
+  }
+
+}
+
+.header-section{
+  background: #49DCB1;
+  color:white;
+  width: 100%;
+}
 
 header {
   width: 100%;
   height: 100vh;
-  background: lightblue;
+  background: #2F97C1;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -27,6 +49,7 @@ header {
   }
 }
 
+// TOOLBAR //
 
 nav {
   position: fixed;
@@ -101,20 +124,26 @@ nav.black ul {
     width: 560px;
     height: 410px;  
   }
+
+  @media screen and (min-width: 1500px) {
+    width: 700px;
+    height: 550px;  
+  }
   
 }
 
 #about{
-  background-color: grey;
+  background-color: #ACFCD9;
   text-align: center;
   padding: 0px;
   @media screen and (min-width: 600px) {
     
-    padding: 20px;
+    // padding: 20px;
+    
 
   }
   @media screen and (min-width: 992px) {
-    padding:100px;
+    padding-bottom: 100px;
   }
   
 
@@ -123,27 +152,32 @@ nav.black ul {
     display:flex;
     flex-direction:column;
     align-items:center;
-    background-color:green;
+    background-color:#49DCB1;
+    color: white;
   }
   
   .about_info_section{
     display: flex;
     flex-direction:column;
-    background-color: purple;
     flex-wrap: wrap;
     justify-content: center;
+
+
     
     
     .Section_piece{
-      flex-direction: column;
+      flex-direction: row;
+      font-size: 18px;
       @media screen and (min-width: 600px) {
-    
+        padding: 30px;
+        font-size: 22px;
         flex: 50%;
     
       }
       @media screen and (min-width: 992px) {
         flex: 25%;
-      
+        padding:50px;
+        font-size: 2em;
       }
       
     }
@@ -154,20 +188,25 @@ nav.black ul {
 // SKILLS SECTION
 
 #Skills{
-  background-color:purple;
+  background-color:#ACFCD9;
   text-align: center;
   flex-direction: column;
   align-items: center;
   align-self:center;
   justify-content: space-around;
-  height: 900px;
+  height: 980px;
+
+  .header-section{
+    background: #49DCB1;
+  }
 
   .Skills-items{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 800px;
+    height: 900px;
+    padding-top: 20px;
       
     .skills-each{
       width: 80%;
@@ -180,7 +219,7 @@ nav.black ul {
           width: 500px;
         }
 
-      .table-header h2{
+      .table-header h3{
         border-bottom: 2px solid grey;
       }
 
@@ -196,12 +235,18 @@ nav.black ul {
 // PROJECTS SECTION
 
 #projects{
-  background-color: #EFE9F4;;
+  background-color: #ACFCD9;;
   text-align: center;
-    @media screen and (min-width: 600px) {
-      padding: 100px;
-      }
+  padding-top: 60px;
 
+  .wrapper{
+    padding: 0px;
+
+    @media screen and (min-width: 640px) {
+      padding: 50px;
+
+    }
+  }
 }
 
 #project-container{
@@ -235,7 +280,18 @@ nav.black ul {
     .item{
       img{
       width: 100%;
-      height: 100%;
+      height: 200px;
+
+      @media screen and (min-width: 400px) {
+        height: 250px;
+  
+      }
+      @media screen and (min-width: 640px) {
+        width: 100%;
+        height: 100%;
+  
+      }
+
       }
     }
   
@@ -243,84 +299,112 @@ nav.black ul {
 
 // EDUCATION SECTION
 
-#Education{
-  background-color: green;
-  text-align: center;
-  height: 250px;
-  // padding: 200px; * remember to add media query to add padding.
-    @media screen and (min-width: 600px) {
-      padding: 50px;
-    }
-    // @media screen and (min-width: 992px) {
-    //   padding:50px;
-    // }
-
-  .Education-item{
-    background-color: grey;
-    // width:600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self:center;
-    width: 80%;
-    box-shadow: 3px 3px;
-
-    
-
-    @media screen and (min-width: 600px) {
-    
-      width: 500px;
-  
-    }
-  //   @media screen and (min-width: 992px) {
-  //     width: 500px;
-  // }
-  }
-}
-
-// WORK EXPERIENCE SECTION
-
-#Work-Experience{
-  background-color:purple;
+#education{
+  background-color:#ACFCD9;
   text-align: center;
   flex-direction: column;
   align-items: center;
   align-self:center;
   justify-content: space-around;
-  height: 500px;
+  height: 410px;
 
-  .Work-experience-items{
+  .header-section{
+    background: #49DCB1;
+  }
+
+  .education-items{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 400px;
-    
-
+    height: 260px;
+    padding-top: 20px;
       
-    .jobs{
+    .education-each{
       width: 80%;
       box-shadow: 3px 3px;
-      background-color: grey;
-      @media screen and (min-width: 600px) {
-    
-        width: 500px;
-       }
+      background-color: white;
+      text-align: start;
+      padding: 20px;
+        @media screen and (min-width: 600px) {
+      
+          width: 500px;
+        }
+
+      .table-header h3{
+        border-bottom: 2px solid grey;
+      }
+
+      p{
+        font-size: 1em;
+        margin: 0;
+      }
+    }
+  }
+
+}
+
+// WORK EXPERIENCE SECTION
+
+#work{
+  background-color:#ACFCD9;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  align-self:center;
+  justify-content: space-around;
+  height: 730px;
+
+  .header-section{
+    background: #49DCB1;
+  }
+
+  .work-items{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 560px;
+    padding-top: 20px;
+      
+    .work-each{
+      width: 80%;
+      box-shadow: 3px 3px;
+      background-color: white;
+      text-align: start;
+      padding: 20px;
+        @media screen and (min-width: 600px) {
+      
+          width: 500px;
+        }
+
+      .table-header h3{
+        border-bottom: 2px solid grey;
+      }
+
+      p{
+        font-size: 1em;
+        margin: 0;
+      }
     }
   }
 
 }
 
 #contact{
-  background-color: grey;
+  background-color: #49DCB1;
   text-align: center;
+  color: white;
+  p{
+    font-size: 20px;
+  }
 
 }
 
 footer{
   display: flex;
   justify-content: center;
-  background-color: #171D1C;
+  background-color: black;
  
 
   .footer-items{
@@ -328,10 +412,12 @@ footer{
     justify-content:space-evenly;
     // margin-left: 48px;
     width: 300px;
-    background-color: green;
+    color:white;
+  
 
     .icon{
       font-size: 3em;
+      color: white;
     }
   }
   
@@ -340,14 +426,7 @@ footer{
 
 // MEDIA QUERY
 
-
-
-// ABOUT 
-
-
-
-
-@media(max-width: 786px) {
+@media(max-width: 1060px) {
 
   .logo {
         position: fixed;
