@@ -23,5 +23,5 @@ The design of the website itself was firstly created and managed using bolsamiq.
 Trello was used to help with managing every task that was involved with creating the site, a few snap shots of the process are shown below using trello.
 There was a lot of features that I did want to add into the webpage but unfortunately there was not enough time for me be able to implement them at this stage.  The first priority was for me to have the layout and responsiveness to be finished. Adding in the information and styling came next and with any extra time I had after that I would add in some additional features.
 
-![Screenshot](bias.png)
+![bias](pictures/bias.png)
 
