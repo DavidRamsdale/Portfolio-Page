@@ -19,11 +19,14 @@ header {
   align-items: center;
   color: white;
 }
+header .title {
+  text-align: center;
+}
 
 nav {
   position: fixed;
   width: 100%;
-  line-height: 0px;
+  line-height: 40px;
 }
 nav ul {
   line-height: 60px;
@@ -67,6 +70,30 @@ nav.black ul {
   padding: auto;
 }
 
+#profilepic {
+  border-radius: 60px;
+  width: 250px;
+  height: 190px;
+}
+@media screen and (min-width: 360px) {
+  #profilepic {
+    width: 350px;
+    height: 265px;
+  }
+}
+@media screen and (min-width: 600px) {
+  #profilepic {
+    width: 560px;
+    height: 410px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #profilepic {
+    width: 560px;
+    height: 410px;
+  }
+}
+
 #about {
   background-color: grey;
   text-align: center;
@@ -90,6 +117,7 @@ nav.black ul {
 }
 #about .about_info_section {
   display: flex;
+  flex-direction: column;
   background-color: purple;
   flex-wrap: wrap;
   justify-content: center;
@@ -105,7 +133,6 @@ nav.black ul {
 @media screen and (min-width: 992px) {
   #about .about_info_section .Section_piece {
     flex: 25%;
-    padding: 25px;
   }
 }
 
@@ -166,6 +193,12 @@ nav.black ul {
   grid-gap: 10px;
   grid-template-columns: repeat(1, 300px);
   grid-template-rows: repeat(2, 200px);
+}
+@media screen and (min-width: 400px) {
+  .project-items {
+    grid-template-columns: repeat(1, 400px);
+    grid-template-rows: repeat(2, 250px);
+  }
 }
 @media screen and (min-width: 640px) {
   .project-items {
@@ -266,6 +299,7 @@ footer .footer-items .icon {
   nav ul {
     max-height: 0px;
     background: #000;
+    line-height: 0em;
   }
 
   nav.black ul {

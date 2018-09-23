@@ -21,13 +21,17 @@ header {
   justify-content: center;
   align-items: center;
   color:white;
+
+  .title{
+    text-align: center;
+  }
 }
 
 
 nav {
   position: fixed;
   width: 100%;
-  line-height: 0px;
+  line-height: 40px;
 
   ul {
       line-height: 60px;
@@ -77,6 +81,29 @@ nav.black ul {
 }
 
 // ABOUT SECTION
+#profilepic{
+  border-radius: 60px;
+  width: 250px;
+  height: 190px;
+  @media screen and (min-width: 360px) {
+    
+    width: 350px;
+    height: 265px;
+
+  }
+  @media screen and (min-width: 600px) {
+    
+    width: 560px;
+    height: 410px;
+
+  }
+  @media screen and (min-width: 992px) {
+    width: 560px;
+    height: 410px;  
+  }
+  
+}
+
 #about{
   background-color: grey;
   text-align: center;
@@ -88,8 +115,8 @@ nav.black ul {
   }
   @media screen and (min-width: 992px) {
     padding:100px;
-  
   }
+  
 
 
   .about_header-section{
@@ -101,6 +128,7 @@ nav.black ul {
   
   .about_info_section{
     display: flex;
+    flex-direction:column;
     background-color: purple;
     flex-wrap: wrap;
     justify-content: center;
@@ -115,7 +143,6 @@ nav.black ul {
       }
       @media screen and (min-width: 992px) {
         flex: 25%;
-        padding:25px;
       
       }
       
@@ -188,6 +215,11 @@ nav.black ul {
   grid-gap: 10px;
   grid-template-columns: repeat(1, 300px);
   grid-template-rows: repeat(2, 200px);
+    @media screen and (min-width: 400px) {
+      grid-template-columns: repeat(1, 400px);
+      grid-template-rows: repeat(2, 250px);
+
+    }
     @media screen and (min-width: 640px) {
       grid-template-columns: repeat(2, 300px);
       grid-template-rows: repeat(2, 200px);
@@ -309,6 +341,12 @@ footer{
 // MEDIA QUERY
 
 
+
+// ABOUT 
+
+
+
+
 @media(max-width: 786px) {
 
   .logo {
@@ -320,6 +358,7 @@ footer{
   nav ul {
         max-height: 0px;
         background: #000;
+        line-height: 0em;
   }
 
   nav.black ul {
