@@ -169,12 +169,30 @@ a {
   #skills-list{
     display: grid;
     grid-template-columns: repeat(1, 300px);
-    grid-template-rows: repeat(4, 160px);
-    grid-gap: 10px;
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 10%;
+    margin-top: 30px;
 
     .skills-item{
-      border-style: solid;
-      border-color: black;
+      box-shadow: 3px 3px;
+      background-color: $mgreen;
+      text-align: start;
+      padding: 20px;
+
+      p{
+         margin-top: 10px;
+         font-size: 30px;
+         letter-spacing: 8px;
+
+         i{
+           color: $dblack;
+         }
+      }
+
+      h3{
+        color: $dblack;
+        border-bottom: 2px solid $white;
+      }
     }
 
   }
@@ -183,6 +201,8 @@ a {
 
 #timeline {
   background: $lgrey;
+  
+  
 }
 
 #contact {
