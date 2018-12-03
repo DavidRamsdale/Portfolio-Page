@@ -155,13 +155,13 @@ a {
       #contact ul li span i {
         cursor: pointer;
         font-size: 3rem;
-        color: #45a29e; }
+        color: #FEFFFF; }
         #contact ul li a i:link,
         #contact ul li span i:link {
-          color: #45a29e; }
+          color: #FEFFFF; }
         #contact ul li a i:visited,
         #contact ul li span i:visited {
-          color: #45a29e; }
+          color: #FEFFFF; }
         #contact ul li a i:hover,
         #contact ul li span i:hover {
           color: #66fcf1; }
@@ -200,10 +200,6 @@ a {
 @media (min-width: 500px) {
   h2 {
     text-align: center; }
-
-  #about h2,
-  #skills h2 {
-    align-self: center; }
 
   #contact ul {
     display: grid;

@@ -202,7 +202,6 @@ a {
 #timeline {
   background: $lgrey;
   
-  
 }
 
 #contact {
@@ -228,14 +227,14 @@ a {
       span i {
         cursor: pointer;
         font-size: 3rem;
-        color: $dblue;
+        color: $white;
 
         &:link {
-          color: $dblue;
+          color: $white;
         }
 
         &:visited {
-          color: $dblue;
+          color: $white;
         }
 
         &:hover {
@@ -308,7 +307,6 @@ a {
 
   #about h2,
   #skills h2 {
-    align-self: center;
   }
 
   #contact ul {
