@@ -45,12 +45,6 @@ li {
   font-size: 1rem;
   font-weight: 300; }
 
-a {
-  text-decoration: none;
-  color: #45a29e; }
-  a:hover {
-    color: #66fcf1; }
-
 #hero {
   background-color: #3AAFA9;
   overflow: hidden;
@@ -136,6 +130,8 @@ a {
 
 #timeline {
   background: #DEF2F1; }
+  #timeline * {
+    box-sizing: border-box; }
 
 #contact {
   background-color: #3AAFA9; }
