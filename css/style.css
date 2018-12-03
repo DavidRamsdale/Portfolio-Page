@@ -98,10 +98,13 @@ a {
       display: grid;
       grid-gap: 10px;
       grid-template-columns: repeat(1, 300px);
-      grid-template-rows: repeat(2, 200px); }
-      #projects #wrapper #project-items .item img {
-        width: 100%;
-        height: 200px; }
+      grid-template-rows: repeat(4, 200px); }
+      #projects #wrapper #project-items .item {
+        border-style: solid;
+        border-color: grey; }
+        #projects #wrapper #project-items .item img {
+          width: 100%;
+          height: 100%; }
 
 #skills {
   background: #FEFFFF; }
@@ -112,7 +115,8 @@ a {
 #contact {
   background-color: #3AAFA9; }
   #contact h2 {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    color: #FEFFFF; }
   #contact ul {
     height: 90%;
     display: flex;
@@ -199,11 +203,8 @@ a {
   #projects #wrapper {
     padding: 40px; }
     #projects #wrapper #project-items {
-      grid-template-columns: repeat(2, 300px);
-      grid-template-rows: repeat(2, 200px); }
-      #projects #wrapper #project-items .item img {
-        width: 100%;
-        height: 100%; } }
+      grid-template-columns: repeat(1, 350px);
+      grid-template-rows: repeat(4, 230px); } }
 @media (min-width: 800px) {
   #hero .title h1 span {
     display: inline; } }
