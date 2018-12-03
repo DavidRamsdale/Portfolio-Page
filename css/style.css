@@ -152,11 +152,6 @@ a {
   #skills ul li {
     line-height: 3.5vh; }
 
-  #projects {
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-rows: 4vh 1fr 3vh; }
-
   #contact ul li a i,
   #contact ul li span i {
     font-size: 8vh; } }
