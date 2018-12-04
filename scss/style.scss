@@ -541,13 +541,17 @@ nav {
     top: 0;
     left: 0;
 
+    .black{
+      background-color: $dblack !important;
+     }
+
     #hamburger {
       display: none;
     }
 
     #nav-list {
       padding: 5px;
-      background-color: $dblack;
+      background-color: transparent;
       display: flex;
       opacity: 1;
       flex-direction: row;
