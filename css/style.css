@@ -356,13 +356,11 @@ nav {
     position: fixed;
     top: 0;
     left: 0; }
-    nav .black {
-      background-color: #17252A !important; }
     nav #hamburger {
       display: none; }
     nav #nav-list {
       padding: 5px;
-      background-color: transparent;
+      background-color: #17252A;
       display: flex;
       opacity: 1;
       flex-direction: row;

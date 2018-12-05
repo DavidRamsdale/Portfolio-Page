@@ -22,6 +22,11 @@ navlistitems.forEach(item => item.addEventListener("click", toogleNavListOpen));
 //     }
 // })
 
-window.addEventListener("scroll", function() {
-    document.getElementById("nav-list").classList.add("black")
-})
+function emailFunction() {
+    var copyText = document.getElementById("email");
+    copyText.select();
+    document.execCommand("copy");
+    alert("Copied email: " + copyText.value);
+}
+
+let email = document.getElementById("email-button").addEventListener("click", emailFunction)

@@ -542,7 +542,7 @@ nav {
     left: 0;
 
     .black{
-      background-color: $dblack !important;
+      // background-color: $dblack !important;
      }
 
     #hamburger {
@@ -551,7 +551,7 @@ nav {
 
     #nav-list {
       padding: 5px;
-      background-color: transparent;
+      background-color: $dblack;
       display: flex;
       opacity: 1;
       flex-direction: row;
@@ -635,9 +635,3 @@ nav {
   }
 }
 
-// /* 100% Image Width on Smaller Screens */
-// @media only screen and (max-width: 700px){
-//   .modal-content {
-//       width: 100%;
-//   }
-// }
