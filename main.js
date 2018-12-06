@@ -23,10 +23,13 @@ navlistitems.forEach(item => item.addEventListener("click", toogleNavListOpen));
 // })
 
 function emailFunction() {
-    var copyText = document.getElementById("email");
-    copyText.select();
-    document.execCommand("copy");
-    alert("Copied email: " + copyText.value);
+    const el = document.createElement('textarea');
+    el.value = "davidramsdale1991@gmail.com";
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    alert("Copied to clipboard: davidramsdale1991@gmail.com");
 }
 
 let email = document.getElementById("email-button").addEventListener("click", emailFunction)

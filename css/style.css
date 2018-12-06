@@ -277,6 +277,9 @@ nav {
     #contact ul li {
       display: inline-block;
       margin-bottom: 1rem; }
+      #contact ul li input {
+        font-size: 20px;
+        background: #3AAFA9; }
       #contact ul li a i,
       #contact ul li span i {
         cursor: pointer;
