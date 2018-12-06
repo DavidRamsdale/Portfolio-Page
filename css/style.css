@@ -432,6 +432,12 @@ nav {
         color: #17252A;
         border-bottom: 2px solid #FEFFFF; }
 
+  #timeline #wrapper {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
   #contact ul {
     display: flex;
     flex-direction: row; }
