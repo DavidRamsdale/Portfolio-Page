@@ -397,7 +397,7 @@ nav {
   #projects {
     min-height: 100%; }
     #projects #wrapper {
-      height: 90%;
+      height: 80%;
       padding: 45px;
       display: flex;
       flex-direction: column;
@@ -408,6 +408,20 @@ nav {
 
   #skills li {
     font-size: 18px; }
+  #skills #skills-list {
+    margin-top: 60px;
+    grid-template-columns: repeat(2, 550px);
+    grid-template-rows: repeat(2, 215px);
+    grid-gap: 25px; }
+    #skills #skills-list .skills-item p {
+      margin-top: 50px;
+      font-size: 80px;
+      letter-spacing: 8px; }
+      #skills #skills-list .skills-item p i {
+        color: #17252A; }
+    #skills #skills-list h3 {
+      color: #17252A;
+      border-bottom: 2px solid #FEFFFF; }
 
   #contact ul {
     display: flex;

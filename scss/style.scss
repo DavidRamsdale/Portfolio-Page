@@ -512,7 +512,12 @@ nav {
 }
 
 @media (min-width: 650px) {
-  
+  #about {
+    p{
+      
+    }
+    
+  }
 
   #skills {
 
@@ -615,7 +620,7 @@ nav {
     min-height: 100%;
 
     #wrapper{
-      height: 90%;
+      height: 80%;
       padding: 45px;
       display: flex;
       flex-direction: column;
@@ -630,9 +635,35 @@ nav {
   }
 
   #skills {
+    
     li {
       font-size: 18px;
     }
+
+    #skills-list{
+      margin-top: 60px;
+      grid-template-columns: repeat(2, 550px);
+      grid-template-rows: repeat(2, 215px);
+      grid-gap: 25px;
+    
+      .skills-item{
+        p{
+          margin-top: 50px;
+          font-size: 80px;
+          letter-spacing: 8px;
+    
+          i{
+            color: $dblack;
+          }
+      }
+     }
+  
+     h3{
+       color: $dblack;
+       border-bottom: 2px solid $white;
+     }
+    }
+
   }
 
   #contact {
