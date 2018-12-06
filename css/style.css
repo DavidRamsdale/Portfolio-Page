@@ -318,8 +318,12 @@ nav {
   h3 {
     font-size: 27px; }
 
-  p,
-  li,
+  p #skills-list,
+  li #skills-list,
+  #skills #skills-list {
+    grid-template-columns: repeat(1, 400px);
+    grid-template-rows: repeat(4, 125px); }
+
   #skills ul li {
     line-height: 32px; } }
 @media (min-width: 500px) {
@@ -408,20 +412,25 @@ nav {
 
   #skills li {
     font-size: 18px; }
-  #skills #skills-list {
-    margin-top: 60px;
-    grid-template-columns: repeat(2, 550px);
-    grid-template-rows: repeat(2, 215px);
-    grid-gap: 25px; }
-    #skills #skills-list .skills-item p {
-      margin-top: 50px;
-      font-size: 80px;
-      letter-spacing: 8px; }
-      #skills #skills-list .skills-item p i {
-        color: #17252A; }
-    #skills #skills-list h3 {
-      color: #17252A;
-      border-bottom: 2px solid #FEFFFF; }
+  #skills #wrapper {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #skills #wrapper #skills-list {
+      margin-top: 60px;
+      grid-template-columns: repeat(2, 450px);
+      grid-template-rows: repeat(2, 215px);
+      grid-gap: 25px; }
+      #skills #wrapper #skills-list .skills-item p {
+        margin-top: 50px;
+        font-size: 80px;
+        letter-spacing: 8px; }
+        #skills #wrapper #skills-list .skills-item p i {
+          color: #17252A; }
+      #skills #wrapper #skills-list h3 {
+        color: #17252A;
+        border-bottom: 2px solid #FEFFFF; }
 
   #contact ul {
     display: flex;
