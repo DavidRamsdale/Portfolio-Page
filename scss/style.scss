@@ -164,6 +164,10 @@ nav {
   background: $lgrey;
   min-height: 900px;
 
+    h2 {
+      text-align: center;
+    }
+
     h3 {
       color: $dblue;
       margin-bottom: 1rem;
@@ -392,10 +396,6 @@ nav {
       display: inline-block;
       margin-bottom: 1rem;
 
-      input{
-        font-size: 20px;
-        background: $mgreen;
-      }
 
       a i,
       span i {
@@ -520,7 +520,7 @@ nav {
 
   #projects {
     #wrapper{
-      padding: 40px;
+      // padding: 40px;
 
       #project-items{
         // grid-template-columns: repeat(1, 350px);
@@ -612,11 +612,18 @@ nav {
 
   #projects {
 
+    min-height: 100%;
+
     #wrapper{
-      padding: 40px;
+      height: 90%;
+      padding: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    
 
       #project-items{
-      grid-template-columns: repeat(2, 400px);
+      grid-template-columns: repeat(2, 450px);
       grid-template-rows: repeat(2, 250px);
       }
     }

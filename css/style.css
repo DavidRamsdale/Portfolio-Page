@@ -114,6 +114,8 @@ nav {
   padding-bottom: 35px;
   background: #DEF2F1;
   min-height: 900px; }
+  #projects h2 {
+    text-align: center; }
   #projects h3 {
     color: #45a29e;
     margin-bottom: 1rem; }
@@ -277,9 +279,6 @@ nav {
     #contact ul li {
       display: inline-block;
       margin-bottom: 1rem; }
-      #contact ul li input {
-        font-size: 20px;
-        background: #3AAFA9; }
       #contact ul li a i,
       #contact ul li span i {
         cursor: pointer;
@@ -346,9 +345,6 @@ nav {
         grid-area: 3 / 2 / 4 / 4; }
       #contact ul li:nth-of-type(5) {
         grid-area: 3 / 4 / 4 / 6; } }
-@media (min-width: 650px) {
-  #projects #wrapper {
-    padding: 40px; } }
 @media (min-width: 800px) {
   #hero .title h1 span {
     display: inline; } }
@@ -398,11 +394,17 @@ nav {
       width: 560px;
       height: 410px; }
 
-  #projects #wrapper {
-    padding: 40px; }
-    #projects #wrapper #project-items {
-      grid-template-columns: repeat(2, 400px);
-      grid-template-rows: repeat(2, 250px); }
+  #projects {
+    min-height: 100%; }
+    #projects #wrapper {
+      height: 90%;
+      padding: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #projects #wrapper #project-items {
+        grid-template-columns: repeat(2, 450px);
+        grid-template-rows: repeat(2, 250px); }
 
   #skills li {
     font-size: 18px; }
