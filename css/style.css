@@ -313,7 +313,8 @@ nav {
     scroll-snap-align: start; }
 
   h2 {
-    font-size: 4vh; }
+    font-size: 4vh;
+    text-align: center; }
 
   h3 {
     font-size: 3vh; }
